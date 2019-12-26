@@ -39,7 +39,7 @@ class Artigo
         return $artigos;
     }
 
-    public function encontrarPorId(string $id): array
+    public function select(string $id): array
     {
         $selecionaArtigo = $this->mysql->prepare("SELECT id, titulo, conteudo FROM artigos WHERE id = ?");
         $selecionaArtigo->bind_param('s', $id);

@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     die();
 }
 $artigo = new Artigo($mysql);
-$art = $artigo->encontrarPorId($_GET['id']);
+$art = $artigo->select($_GET['id']);
 
 ?>
 

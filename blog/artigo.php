@@ -25,7 +25,7 @@ $artigo = $obj_artigo->select($_GET['id']);
             <?php echo nl2br($artigo['conteudo']); ?>
         </p>
         <div>
-            <a class="botao botao-block" href="index.php">Voltar</a>
+            <a class="botao botao-block" href="inicial.php">Voltar</a>
         </div>
     </div>
 </body>

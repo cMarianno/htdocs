@@ -1,7 +1,7 @@
 <?php
 
-require '../config.php';
-include '../src/Artigo.php';
+require 'config.php';
+include 'src/Artigo.php';
 
 $artigo = new Artigo($mysql);
 $artigos = $artigo->exibirTodos();
@@ -13,7 +13,7 @@ $artigos = $artigo->exibirTodos();
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -22,6 +22,7 @@ $artigos = $artigo->exibirTodos();
         <div>
             <div id="artigo-admin">
                 <nav>
+                <!--<p align=”center”> *Negrito </center>-->
                 <label for=""><b>Digite seu usuario</b></label>
                 <input class="campo-form" type="text" name="login" id="login" />
                 <label for=""><b>Digite sua senha</b></label>
